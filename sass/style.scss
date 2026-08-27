@@ -1,0 +1,63 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ## Colors
+
+// ### Primary
+
+// #### Text
+
+$Purple300: hsl(276, 100%, 81%);
+$Purple600: hsl(276, 55%, 52%);
+$Gray500: hsl(270, 7%, 64%);
+$Gray300: hsl(206, 6%, 79%);
+$Purple950: hsl(271, 36%, 24%);
+
+// #### Gradients
+
+// These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+
+$Pink-500: hsl(293, 100%, 63%);
+$Purple-500: hsl(264, 100%, 61%);
+
+// ### Secondary
+
+$White: hsl(0, 100%, 100%);
+$Gray100: hsl(270, 20%, 96%);
+$Purple950: hsl(271, 36%, 24%);
+$Pink400: hsl(289, 100%, 72%);
+
+@mixin media($breakpoint){
+    @if $breakpoint == 'mobile'{
+        @media (min-width: 375px){
+            @content;
+        }
+    }@else if $breakpoint == 'desktop'{
+        @media (min-width: 1024px){
+            @content;
+        }
+    }
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $Gray100;
+
+    @include media('desktop'){
+        flex-direction: row;
+    }
+}

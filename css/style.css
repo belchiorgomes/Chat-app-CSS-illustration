@@ -1,0 +1,28 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(270, 20%, 96%);
+}
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

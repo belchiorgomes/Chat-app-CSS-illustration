@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
@@ -37,6 +39,20 @@
           Could you send over some pictures of your dog, please?
         </p>
 
+        <div class="photos">
+          <div class="img">
+            <img src="images/dog-image-1.jpg" alt="photo of a dog">
+          </div>
+
+          <div class="img">
+            <img src="images/dog-image-2.jpg" alt="photo of a dog">
+          </div>
+
+          <div class="img">
+            <img src="images/dog-image-3.jpg" alt="photo of a dog">
+          </div>
+        </div>
+
         <p class="your-message">
           Here are a few pictures. She’s a happy girl!
         </p>
@@ -49,17 +65,32 @@
           She looks so happy! The time we discussed works. How long shall I take her out for?
         </p>
 
-        30 minute walk
-        $29
-        1 hour walk
-        $49
-        Type a message…
+        <div class="message-button">
+          <div class="circle"></div>
+          <span>30 minute walk</span>
+          <span>$29</span>
+        </div>
+
+        <div class="message-button">
+          <div class="circle"></div>
+          <span>1 hour walk</span>
+          <span>$49</span>
+        </div>
+
+        <div class="write-message">
+          <input type="text" name="myMassage" id="myMassage" placeholder="Type a message…">
+        </div>
       </article>
     </section>
-    Simple booking
-    Stay in touch with our dog walkers through the chat interface. This makes it easy to
-    discuss arrangements and make bookings. Once the walk has been completed you can rate
-    your walker and book again all through the chat.
+
+    <section class="container--content">
+      <h1>Simple booking</h1>
+      <p>
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.
+      </p>
+    </section>
   </main>
   
   <footer class="attribution">
