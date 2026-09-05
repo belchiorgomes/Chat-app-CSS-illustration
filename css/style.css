@@ -11,6 +11,8 @@ body {
 }
 
 .container {
+  width: 100%;
+  min-height: 100vh;
   background-color: hsl(270, 20%, 96%);
   display: flex;
   flex-direction: column;
@@ -21,6 +23,7 @@ body {
   .container {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
   }
 }
@@ -31,7 +34,6 @@ body {
   background-color: hsl(0, 100%, 100%);
   width: 350px;
   height: auto;
-  margin-block-start: 2rem;
   border-radius: 0.8rem;
   padding: 1rem;
   overflow: hidden;
@@ -118,6 +120,75 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 0.8rem;
+}
+.container--phone--message .message-button {
+  display: flex;
+  gap: 0.4rem;
+  width: 75%;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  background-image: linear-gradient(to right, hsl(264, 100%, 61%) 60%, hsl(293, 100%, 63%));
+}
+.container--phone--message .message-button .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid hsl(276, 100%, 81%);
+  background-color: transparent;
+}
+.container--phone--message .message-button span:nth-child(2) {
+  color: hsl(276, 100%, 81%);
+}
+.container--phone--message .message-button span:nth-child(3) {
+  color: hsl(0, 100%, 100%);
+  font-weight: bolder;
+  margin-left: auto;
+}
+.container--phone--message .write-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.container--phone--message .write-message input {
+  padding: 1rem;
+  flex: 0 0 80%;
+  border: none;
+  outline: none;
+}
+.container--phone--message .write-message input::placeholder {
+  color: hsl(206, 6%, 79%);
+}
+.container--phone--message .write-message .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: hsl(271, 36%, 24%);
+  margin: auto;
+  text-align: center;
+  line-height: 30px;
+  color: hsl(0, 100%, 100%);
+  font-weight: bolder;
+}
+.container--content {
+  width: 90%;
+}
+.container--content h1 {
+  text-align: center;
+  font-size: 3em;
+}
+.container--content p {
+  margin-block: 1rem;
+  text-align: center;
+  line-height: 2;
+  color: hsl(270, 7%, 64%);
+}
+@media (min-width: 1024px) {
+  .container--content {
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
